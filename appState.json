@@ -1,0 +1,96 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "33c23d03-0bba-489b-9c05-da74093b3352": {
+        "id": "33c23d03-0bba-489b-9c05-da74093b3352",
+        "parent": null,
+        "name": "ha-sms.js",
+        "type": "JS_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "ha-sms.js",
+        "cursor": {
+          "lineNumber": 12,
+          "column": 2
+        },
+        "config": {
+          "runtime": "nodejs10.x",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "haSms"
+        },
+        "triggers": [
+          {
+            "resourceName": "apigapSoutheast2SMSGatewaysendSMSpost",
+            "config": {}
+          }
+        ]
+      }
+    },
+    "openFiles": [
+      "33c23d03-0bba-489b-9c05-da74093b3352"
+    ],
+    "currentFileId": "33c23d03-0bba-489b-9c05-da74093b3352",
+    "resources": {
+      "apigapSoutheast2SMSGatewaysendSMSpost": {
+        "name": "apigapSoutheast2SMSGatewaysendSMSpost",
+        "type": "API_GATEWAY",
+        "config": {
+          "selectedRegion": "ap-southeast-2",
+          "apiType": 1,
+          "apiMode": 0,
+          "apiName": "SMSGateway",
+          "endpointType": "EDGE",
+          "resourceMode": 0,
+          "resourceName": "sendSMS",
+          "resourcePath": "/sendSMS",
+          "restMethod": "POST",
+          "proxyIntegration": false,
+          "enableCORS": false,
+          "stageMode": 0,
+          "stageName": "prod",
+          "mode": 0
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {}
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.1.5",
+    "projectName": "ha-sms",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "ap-southeast-2",
+    "platform": "AWS",
+    "language": "nodejs",
+    "platformRegions": {}
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "ha-sms",
+      "url": "https://github.com/archie02/ha-sms"
+    }
+  }
+}
