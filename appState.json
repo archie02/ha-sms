@@ -11,8 +11,8 @@
         "isRemovable": true,
         "filePath": "ha-sms.js",
         "cursor": {
-          "lineNumber": 12,
-          "column": 2
+          "lineNumber": 21,
+          "column": 40
         },
         "config": {
           "runtime": "nodejs10.x",
@@ -54,6 +54,16 @@
           "stageName": "prod",
           "mode": 0
         }
+      },
+      "snsDirectSMSResource": {
+        "name": "snsDirectSMSResource",
+        "type": "SNS",
+        "config": {
+          "snsType": 1,
+          "numbers": [
+            "@{receiver}"
+          ]
+        }
       }
     },
     "customTemplate": {
@@ -73,7 +83,15 @@
       }
     ],
     "packageJSON": {
-      "dependencies": {}
+      "dependencies": {
+        "aws-sdk": {
+          "name": "aws-sdk",
+          "language": "nodejs",
+          "version": "2.644.0",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
     }
   },
   "PROJECT_META": {
